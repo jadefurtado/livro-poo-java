@@ -10,7 +10,7 @@ public class CalculadoraDeEstoque {
 		while (contador < 35) {
 			double valorDoLivro = 59.90;
 			soma += valorDoLivro;
-			contador += 1;
+			contador ++;
 		}
 		
 		System.out.println("O total em estoque é " + soma);
