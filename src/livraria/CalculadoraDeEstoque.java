@@ -5,7 +5,7 @@ public class CalculadoraDeEstoque {
 	public static void main(String[] args) {
 		
 		double soma = 0;
-		for (int contador = 0; contador <35; contador ++) {
+		for (double i = 0; i <35; i ++) {
 			soma += 59.90;
 		}
 		
