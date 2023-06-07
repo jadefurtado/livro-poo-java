@@ -13,11 +13,19 @@ public class Livro {
 		System.out.println("Descrição: " + descricao);
 		System.out.println("Valor: " + valor);
 		System.out.println("ISBN: " + isbn);
-		autor.mostrarDetalhes();
+		
+		if(this.temAutor()) {
+			autor.mostrarDetalhes();
+		}
+				
 		System.out.println("--");
 	}
 	
 	public void aplicaDescontoDe(double porcentagem) {
 		this.valor -= this.valor * porcentagem;
+	}
+	
+	boolean temAutor() {
+		return this.autor != null;
 	}
 }
