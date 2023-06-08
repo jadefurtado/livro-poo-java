@@ -7,6 +7,12 @@ public class Livro {
 	private String isbn;
 	private Autor autor;
 	
+	
+	public Livro(Autor autor) {
+		this.autor = autor;
+	}
+	
+	
 	public double getValor() {
 		return valor;
 	}
