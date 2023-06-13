@@ -16,6 +16,12 @@ public class Ebook extends Livro {
 		this.waterMark = waterMark;
 	}
 	
-	
+	@Override
+	public boolean aplicaDescontoDe(double porcentagem) {
+		if (porcentagem > 0.15) {
+			return false;
+		}
+		return super.aplicaDescontoDe(porcentagem);
+	}
 
 }
