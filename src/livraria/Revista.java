@@ -1,6 +1,6 @@
 package livraria;
 
-public class Revista {
+public class Revista implements Produto {
 
 	private String nome;
 	private String descricao;
@@ -25,7 +25,7 @@ public class Revista {
 		this.valor = valor;
 	}
 	
-	public boolean aplicaDescontoDe(double porcentagem) {`
+	public boolean aplicaDescontoDe(double porcentagem) {
 		if (porcentagem > 0.1) {
 			return false;
 		}
