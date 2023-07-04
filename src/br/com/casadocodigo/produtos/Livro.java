@@ -56,7 +56,7 @@ public abstract class Livro implements Produto {
 		this.autor = autor;
 	}
 
-	void mostrarDetalhes( ) {
+	public void mostrarDetalhes( ) {
 		System.out.println("Mostrando detalhes do livro");
 		System.out.println("Nome: " + nome);
 		System.out.println("Descrição: " + descricao);

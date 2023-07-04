@@ -38,7 +38,7 @@ public class Autor {
 
 
 
-	void mostrarDetalhes() {
+	public void mostrarDetalhes() {
 		System.out.println("Mostrando detalhes do autor ");
 		System.out.println("Nome: " + nome);
 		System.out.println("Email: " + email);
